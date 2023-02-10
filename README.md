@@ -526,47 +526,58 @@ These different parameters were described by M. Jackson (The mechanics of the ta
 #### type
 Different types of actuator can be defined with the `type` tag : `Constant`, `Linear`, `Gauss3p`, `Gauss6p`, `Sigmoidgauss3p`.
 In function of the type of actuator the parameters are different.
+
 #### dof (Constant, Linear, Gauss3p, Gauss6p, Sigmoidgauss3p)
 The `dof` tag defines the degree of fredoom of the segment. It can be a rotation (`Rot`) or a translation (`Trans`) on one 
 of the 3 axis (`x`, `y`, `z`). This argument is not required.
+
 #### direction (Constant, Linear, Gauss3p, Gauss6p, Sigmoidgauss3p)
 The `direction` of the torque can be positive or negative. This argument is not required.
+
 #### Tmax (Constant, Gauss3p, Gauss6p)
 `Tmax` is the maximum eccentric torque.
+
 #### T0 (Linear, Gauss3p, Gauss6p)
 The tag `T0` defines the maximum concentric torque.
+
 ##### wmax (Gauss3p, Gauss6p)
 The values of `wmax` is the maximum angular velocity above which torque cannot be produced.
+
 ##### wc (Gauss3p, Gauss6p)
 The `wc` tag specifies the angular velocity of the vertical asymptote of the concentric hyperbola based of the relation between tetanic torque and contractile component angular velocity.
+
 ##### amin (Gauss3p, Gauss6p)
 The `amin` tag allows to specify the plateau low activation level (values between 0.5 and 0.99) based of the differential activation-velocity velocity relationship.
+
 ##### wr (Gauss3p, Gauss6p)
 The tag `wr` is the angular velocity range over which the ramp occurs based of the differential activation-velocity velocity relationship.
+
 ##### w1 (Gauss3p, Gauss6p)
 `w1` represents the angular velocity of the midpoint between the maximum and the low plateau activation level based of the differential activation-velocity velocity relationship.
+
 ##### qopt (Gauss3p, Gauss6p, Sigmoidguass3p)
 The `qopt` tag allows to specify the optimum angle for torque production. This argument is required, the default value is `0`.
+
 ##### r (Gauss3p, Gauss6p, Sigmoidguass3p)
 The tag `r` represented the width of the curve based of the torque-angle relationship. This argument is required, the default value is `0`.
+
 #### facteur (Gauss6p)
 ...
+
 #### r2 (Gauss6p)
 ...
+
 #### qopt2 (Gauss6p)
 ...
+
 #### theta (Sigmoidgauss3p)
 ...
+
 #### lambda(Sigmoidgauss3p)
 ...
+
 #### offset (Sigmoidgauss3p)
 ...
-
-
-
-
-
-
 
 ##### 
 
